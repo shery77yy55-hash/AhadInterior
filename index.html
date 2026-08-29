@@ -41,7 +41,7 @@
                             900: '#1c1917',
                         },
                         accent: {
-                            500: '#b45309', // Warm wood/amber tone
+                            500: '#b45309',
                             600: '#92400e',
                             700: '#78350f',
                         }
@@ -52,7 +52,6 @@
     </script>
 
     <style>
-        /* Custom Animations & Effects */
         .animate-on-scroll {
             opacity: 0;
             transform: translateY(30px);
@@ -81,7 +80,6 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
 
-        /* Lightbox Styles */
         #lightbox {
             transition: opacity 0.3s ease-out;
         }
@@ -94,7 +92,6 @@
             pointer-events: none;
         }
 
-        /* Reduced Motion */
         @media (prefers-reduced-motion: reduce) {
             .animate-on-scroll, .image-hover-zoom img, .card-lift, #lightbox {
                 transition: none;
@@ -107,7 +104,6 @@
             }
         }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -122,7 +118,6 @@
             background: #78716c;
         }
 
-        /* Tab Active State */
         .tab-btn.active {
             background-color: #292524;
             color: #fafaf9;
@@ -136,14 +131,12 @@
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="#" class="font-serif text-2xl font-bold text-white tracking-wider drop-shadow-md" id="nav-logo">
                         AHAD INTERIOR
                     </a>
                 </div>
                 
-                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#home" class="text-white/90 hover:text-white font-medium transition-colors drop-shadow-sm nav-link">Home</a>
                     <a href="#about" class="text-white/90 hover:text-white font-medium transition-colors drop-shadow-sm nav-link">About</a>
@@ -152,7 +145,6 @@
                     <a href="#contact" class="bg-accent-600 hover:bg-accent-700 text-white px-6 py-2.5 rounded-sm font-medium transition-all duration-300 shadow-lg hover:shadow-xl">Contact Us</a>
                 </div>
 
-                <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-white hover:text-brand-200 focus:outline-none drop-shadow-md" aria-label="Toggle menu">
                         <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -163,7 +155,6 @@
             </div>
         </div>
 
-        <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden md:hidden bg-brand-900 absolute w-full shadow-xl">
             <div class="px-4 pt-2 pb-6 space-y-2">
                 <a href="#home" class="block px-3 py-3 text-brand-100 hover:bg-brand-800 rounded-md font-medium mobile-link">Home</a>
@@ -180,7 +171,6 @@
 
     <!-- Hero Section -->
     <header id="home" class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-        <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80" 
                  alt="Luxury modern interior living space" 
@@ -188,7 +178,6 @@
             <div class="absolute inset-0 bg-brand-900/60"></div>
         </div>
 
-        <!-- Content -->
         <div class="relative z-10 max-w-5xl mx-auto px-4 text-center animate-on-scroll">
             <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                 Transform Your Space with <span class="text-accent-500">Ahad Interior</span>
@@ -207,7 +196,6 @@
             </div>
         </div>
         
-        <!-- Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <svg class="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
         </div>
@@ -283,10 +271,10 @@
                     </div>
                 </div>
 
-                <!-- Service 4 -->
+                <!-- Service 4: Curtains (FIXED IMAGE) -->
                 <div class="group bg-brand-50 rounded-lg overflow-hidden shadow-md card-lift animate-on-scroll">
                     <div class="image-hover-zoom h-64">
-                        <img src="https://images.unsplash.com/photo-1513694203232-7e96e9d87eae?auto=format&fit=crop&w=600&q=80" alt="Elegant Curtains" class="w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1505693416388-b0346efee958?auto=format&fit=crop&w=600&q=80" alt="Elegant Curtains" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="font-serif text-2xl font-bold text-brand-900 mb-3">Curtains</h3>
@@ -319,7 +307,7 @@
                     </div>
                 </div>
 
-                <!-- Service 7 (Centered on large screens if odd, but grid handles it. Let's make it span or just be the last) -->
+                <!-- Service 7 -->
                 <div class="group bg-brand-50 rounded-lg overflow-hidden shadow-md card-lift animate-on-scroll md:col-span-2 lg:col-span-1 lg:col-start-2">
                     <div class="image-hover-zoom h-64">
                         <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Decorative Wall Panelling" class="w-full h-full object-cover">
@@ -377,15 +365,15 @@
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <!-- Gallery Items -->
                 <div class="gallery-item cursor-pointer image-hover-zoom rounded-lg overflow-hidden shadow-md animate-on-scroll" data-index="0">
                     <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80" alt="Finished interior space" class="w-full h-64 object-cover" loading="lazy">
                 </div>
                 <div class="gallery-item cursor-pointer image-hover-zoom rounded-lg overflow-hidden shadow-md animate-on-scroll" data-index="1">
                     <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=600&q=80" alt="Wooden flooring detail" class="w-full h-64 object-cover" loading="lazy">
                 </div>
+                <!-- Gallery Item 3: Curtains (FIXED IMAGE) -->
                 <div class="gallery-item cursor-pointer image-hover-zoom rounded-lg overflow-hidden shadow-md animate-on-scroll" data-index="2">
-                    <img src="https://images.unsplash.com/photo-1513694203232-7e96e9d87eae?auto=format&fit=crop&w=600&q=80" alt="Elegant curtains" class="w-full h-64 object-cover" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1505693416388-b0346efee958?auto=format&fit=crop&w=600&q=80" alt="Elegant curtains" class="w-full h-64 object-cover" loading="lazy">
                 </div>
                 <div class="gallery-item cursor-pointer image-hover-zoom rounded-lg overflow-hidden shadow-md animate-on-scroll" data-index="3">
                     <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=600&q=80" alt="Wallpaper texture" class="w-full h-64 object-cover" loading="lazy">
@@ -454,7 +442,6 @@
     <section id="contact" class="py-20 md:py-32 bg-brand-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16">
-                <!-- Contact Info -->
                 <div class="animate-on-scroll">
                     <span class="text-accent-600 font-semibold tracking-wider uppercase text-sm mb-2 block">Get in Touch</span>
                     <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-brand-900 mb-6">Let's Transform Your Space</h2>
@@ -498,13 +485,8 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
                 <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl animate-on-scroll">
                     <h3 class="font-serif text-2xl font-bold text-brand-900 mb-6">Send us a Message</h3>
-                    <!-- 
-                        TODO: To make this form functional, replace the action attribute with your Formspree endpoint 
-                        (e.g., action="https://formspree.io/f/YOUR_FORM_ID") or your backend API route.
-                    -->
                     <form id="contact-form" class="space-y-5" action="#" method="POST" novalidate>
                         <div>
                             <label for="name" class="block text-sm font-medium text-brand-700 mb-1">Full Name</label>
@@ -565,13 +547,11 @@
     <footer class="bg-brand-900 text-brand-300 py-16 border-t border-brand-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-                <!-- Brand -->
                 <div>
                     <h3 class="font-serif text-2xl font-bold text-white mb-4">AHAD INTERIOR</h3>
                     <p class="text-brand-400 leading-relaxed mb-6">Interior solutions for beautiful spaces. Transforming homes with premium finishes and professional craftsmanship.</p>
                 </div>
 
-                <!-- Services -->
                 <div>
                     <h4 class="font-bold text-white text-lg mb-4">Services</h4>
                     <ul class="space-y-2">
@@ -584,7 +564,6 @@
                     </ul>
                 </div>
 
-                <!-- Contact -->
                 <div>
                     <h4 class="font-bold text-white text-lg mb-4">Contact</h4>
                     <ul class="space-y-3">
@@ -609,7 +588,6 @@
                     </ul>
                 </div>
 
-                <!-- Quick Action -->
                 <div>
                     <h4 class="font-bold text-white text-lg mb-4">Ready to start?</h4>
                     <a href="tel:03088800140" class="inline-block bg-accent-600 text-white px-6 py-3 rounded-sm font-semibold hover:bg-accent-700 transition-all duration-300 w-full text-center mb-3">
@@ -629,7 +607,6 @@
 
     <!-- Floating Contact Button -->
     <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end space-y-3">
-        <!-- Expanded Options -->
         <div id="floating-options" class="hidden flex-col space-y-3 mb-2 transition-all duration-300 origin-bottom-right">
             <a href="tel:03088800140" class="flex items-center bg-white text-brand-900 px-4 py-3 rounded-lg shadow-xl hover:bg-brand-50 transition-colors group">
                 <span class="mr-3 font-semibold">03088800140</span>
@@ -651,7 +628,6 @@
             </a>
         </div>
 
-        <!-- Main Toggle Button -->
         <button id="floating-toggle" class="w-14 h-14 bg-accent-600 hover:bg-accent-700 text-white rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-accent-300" aria-label="Toggle contact options">
             <svg id="icon-chat" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
             <svg id="icon-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -683,9 +659,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             // --- 1. Navbar Scroll Effect ---
             const navbar = document.getElementById('navbar');
-            const navLogo = document.getElementById('nav-logo');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 50) {
                     navbar.classList.add('bg-brand-900/95', 'backdrop-blur-md', 'shadow-lg', 'py-2');
@@ -711,25 +684,18 @@
                 });
             });
 
-            // --- 3. Scroll Animations (Intersection Observer) ---
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
-
+            // --- 3. Scroll Animations ---
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); // Only animate once
+                        observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
 
-            document.querySelectorAll('.animate-on-scroll').forEach(el => {
-                observer.observe(el);
-            });
+            document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
 
             // --- 4. Service Showcase Tabs ---
             const tabBtns = document.querySelectorAll('.tab-btn');
@@ -749,7 +715,7 @@
                     desc: 'Whether you prefer the natural warmth of wooden flooring or the resilient versatility of vinyl, we offer durable, high-quality flooring solutions for every space.'
                 },
                 curtains: {
-                    img: 'https://images.unsplash.com/photo-1513694203232-7e96e9d87eae?auto=format&fit=crop&w=800&q=80',
+                    img: 'https://images.unsplash.com/photo-1505693416388-b0346efee958?auto=format&fit=crop&w=800&q=80',
                     title: 'Luxury Curtains',
                     desc: 'Custom-fitted curtains designed to add privacy, control natural light, and introduce a layer of luxurious softness and color to your interiors.'
                 },
@@ -772,12 +738,9 @@
 
             tabBtns.forEach(btn => {
                 btn.addEventListener('click', () => {
-                    // Remove active class from all
                     tabBtns.forEach(b => b.classList.remove('active'));
-                    // Add active to clicked
                     btn.classList.add('active');
                     
-                    // Update content with fade effect
                     const key = btn.getAttribute('data-tab');
                     const data = showcaseData[key];
                     
@@ -796,13 +759,10 @@
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
             const lightboxCaption = document.getElementById('lightbox-caption');
-            const lightboxClose = document.getElementById('lightbox-close');
-            const lightboxPrev = document.getElementById('lightbox-prev');
-            const lightboxNext = document.getElementById('lightbox-next');
             
             let currentIndex = 0;
             const images = Array.from(galleryItems).map(item => ({
-                src: item.querySelector('img').src.replace('w=600', 'w=1200'), // Higher res for lightbox
+                src: item.querySelector('img').src.replace('w=600', 'w=1200'),
                 alt: item.querySelector('img').alt
             }));
 
@@ -811,7 +771,7 @@
                 updateLightboxImage();
                 lightbox.classList.remove('inactive');
                 lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                document.body.style.overflow = 'hidden';
             };
 
             const closeLightbox = () => {
@@ -839,16 +799,14 @@
                 item.addEventListener('click', () => openLightbox(index));
             });
 
-            lightboxClose.addEventListener('click', closeLightbox);
-            lightboxNext.addEventListener('click', (e) => { e.stopPropagation(); nextImage(); });
-            lightboxPrev.addEventListener('click', (e) => { e.stopPropagation(); prevImage(); });
+            document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+            document.getElementById('lightbox-next').addEventListener('click', (e) => { e.stopPropagation(); nextImage(); });
+            document.getElementById('lightbox-prev').addEventListener('click', (e) => { e.stopPropagation(); prevImage(); });
             
-            // Close on background click
             lightbox.addEventListener('click', (e) => {
                 if (e.target === lightbox) closeLightbox();
             });
 
-            // Keyboard navigation
             document.addEventListener('keydown', (e) => {
                 if (!lightbox.classList.contains('active')) return;
                 if (e.key === 'Escape') closeLightbox();
@@ -864,17 +822,14 @@
                 e.preventDefault();
                 let isValid = true;
 
-                // Reset errors
                 document.querySelectorAll('[id$="-error"]').forEach(el => el.classList.add('hidden'));
 
-                // Validate Name
                 const name = document.getElementById('name');
                 if (!name.value.trim()) {
                     document.getElementById('name-error').classList.remove('hidden');
                     isValid = false;
                 }
 
-                // Validate Phone
                 const phone = document.getElementById('phone');
                 const phoneRegex = /^[0-9+\-\s()]{10,15}$/;
                 if (!phoneRegex.test(phone.value.trim())) {
@@ -882,7 +837,6 @@
                     isValid = false;
                 }
 
-                // Validate Email
                 const email = document.getElementById('email');
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailRegex.test(email.value.trim())) {
@@ -890,14 +844,12 @@
                     isValid = false;
                 }
 
-                // Validate Service
                 const service = document.getElementById('service');
                 if (!service.value) {
                     document.getElementById('service-error').classList.remove('hidden');
                     isValid = false;
                 }
 
-                // Validate Message
                 const message = document.getElementById('message');
                 if (!message.value.trim()) {
                     document.getElementById('message-error').classList.remove('hidden');
@@ -905,11 +857,8 @@
                 }
 
                 if (isValid) {
-                    // Simulate submission success
                     formSuccess.classList.remove('hidden');
                     contactForm.reset();
-                    
-                    // Hide success message after 5 seconds
                     setTimeout(() => {
                         formSuccess.classList.add('hidden');
                     }, 8000);
@@ -929,7 +878,6 @@
                 iconClose.classList.toggle('hidden');
             });
 
-            // Close floating options when clicking outside
             document.addEventListener('click', (e) => {
                 if (!floatingToggle.contains(e.target) && !floatingOptions.contains(e.target)) {
                     floatingOptions.classList.add('hidden');
